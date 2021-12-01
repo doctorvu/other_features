@@ -110,5 +110,28 @@
       </div>
     </div>
     <script src="app.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAmxzveyNVU876fflUUbjm96O1mmPPDpFk",
+        authDomain: "philocourse.firebaseapp.com",
+        projectId: "philocourse",
+        storageBucket: "philocourse.appspot.com",
+        messagingSenderId: "774818957585",
+        appId: "1:774818957585:web:781dc07ebc1706d3ff64b0",
+        measurementId: "G-EW78RR7B4V"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
